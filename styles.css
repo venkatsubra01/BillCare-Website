@@ -1,0 +1,164 @@
+:root {
+    --red: #f9032f;
+    --black: #000;
+    --white: #fff;
+    --purple: #800080;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: var(--black);
+    height: 60px;
+    padding: 0.5 rem  calc((100vw-1200px)/2);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+
+.navbar__logo {
+    color: var(--white);
+    text-decoration:none;
+    padding: 0rem 2rem;
+    font-size: 1.5rem;
+}
+
+.navbar__link {
+    color: var(--white);
+    text-decoration:none;
+    padding: 0rem 1rem;
+}
+
+.navbar__link:hover {
+    color: var(--purple);
+}
+
+/* Services Section (in beta) */
+.services {
+    padding: 0rem calc((100vw-1200px)/2);
+    
+    
+}
+
+.topline {
+    font-size: 2rem;
+}
+.services__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal columns*/
+    padding: 1rem;
+    align-items: center;
+}
+
+.services__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Video section */
+.video {
+    padding: 2rem calc((100vw - 1200px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple); /* Optional: Add a background color */
+}
+
+.video__container {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+}
+
+.video__container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Join the Waiting List Section */
+.join-waiting-list {
+    padding: 2rem calc((100vw - 1200px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-waiting-list h2 {
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.join-waiting-list__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.join-waiting-list__form label {
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.join-waiting-list__form input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.join-waiting-list__form button {
+    padding: 0.75rem;
+    background: var(--red);
+    color: var(--white);
+    border: solid;
+    border-radius: 4px;
+    border-color: black;
+    border-width: 1px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.join-waiting-list__form button:hover {
+    background: var(--purple);
+}
+
+
+/* Bill Negotiation Section */
+.bill-negotiation {
+    padding: 2rem calc((100vw - 1200px) / 2);
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+.bill-negotiation p {
+    color: var(--purple);
+    font-size: 1.2rem;
+}
+
+.bill-negotiation a {
+    color: var(--purple);
+    text-decoration: underline;
+}
